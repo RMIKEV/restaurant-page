@@ -53,5 +53,5 @@ const homepage = () => {
     div4.appendChild(locationPara);
 };
 
-
+import "./homepage.css"
 export { homepage };

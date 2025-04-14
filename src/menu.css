@@ -1,0 +1,24 @@
+#content.menubar{
+    gap:40px;
+    background: url(menuBackground.jpg);
+    background-color: #F9F5F1;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+#div1.menubar, #div2.menubar, #div3.menubar, #div4.menubar{
+    text-align: center;
+}
+div.menubar h4{
+    font-weight: lighter;
+    padding-bottom: 6px;
+}
+#div1.menubar{
+    font-weight: 100;
+    font-size: 4rem;
+    letter-spacing: 1rem;
+
+}
+div.menubar p {
+    max-width: 200px;
+}
