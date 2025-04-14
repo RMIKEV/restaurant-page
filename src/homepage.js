@@ -1,5 +1,11 @@
+import restaurantImg from "./restaurant-interior.jpg";
 const homepage = () => {
     const content = document.querySelector("#content");
+
+    const img = document.createElement("img");
+    img.src = restaurantImg;
+    content.appendChild(img);
+
     const divs = ['div1', 'div2', 'div3', 'div4'];
     divs.forEach((ele) => {
         const div = document.createElement("div");
@@ -14,7 +20,7 @@ const homepage = () => {
 
     div2.classList.add("intro");
     const p = document.createElement("p");
-    p.textContent = `Rmikev's latte has the finest ! The atmosphere and the sitting bring your all best memories back!
+    p.textContent = `Rmikev's latte has the finest! The atmosphere and the sitting bring your all best memories back!
                                     This is exactly a kind of place where I would like to return again and again.`;
     div2.appendChild(p);
 
@@ -27,7 +33,7 @@ const homepage = () => {
         const li = document.createElement("li");
         let textNode = 0;
         if (ele === 'Sun')
-            textNode = document.createTextNode( `Sat-Sun: 8am - 6pm`);
+            textNode = document.createTextNode(`Sat-Sun: 8am - 6pm`);
 
         else
             textNode = document.createTextNode(`Mon-Fri: 8am - 10pm`);

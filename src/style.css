@@ -1,7 +1,8 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -9,54 +10,54 @@ body {
     height: 100vh;
     font-size: 1.2rem;
 }
+
 .navbar {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     gap: 15px;
     margin: 10px;
+    min-width: 490px;
 }
 
-.copyright {
-    margin: 10px auto;
-
-}
-ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.navbar .icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 170px
 }
 
-#content {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    background: #f0f0f0;
-    justify-content: center;
-    align-items: center;
-}
-#div1 h1, #div3 h2, #div4 h2{
-    text-align: center;
-    margin: 10px auto 1px auto;
-}
-#div1 h1{
-    margin-top: 40px;
-}
-.intro p{
-    max-width: 400px;
-    text-align: center;
+.left {
+    margin-left: auto;
 }
 
-#content img{
+#content img {
     width: 600px;
     height: 300px;
     border-radius: 1rem;
 }
 
-button{
+button {
     width: 80px;
     height: 30px;
     border-radius: 20px;
     border: none;
     font-weight: bold;
+}
+
+button:hover {
+    background: rgba(150, 75, 0, 0.3);
+
+
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: 2px 2px 5px burlywood;
+
+}
+
+.copyright {
+    margin: 10px auto;
+
 }
